@@ -15,17 +15,17 @@ public class RabbitMQConfiguration {
 	public static final String NAME_ROUTE = "model.route.#";
 	
 	@Bean
-	private Queue queue() {
+	public Queue queue() {
 		return new Queue(NAME_QUEUE, false);
 	}
 	
 	@Bean
-	private TopicExchange exchange() {
+	public TopicExchange exchange() {
 		return new TopicExchange(NAME_EXCHANGE);
 	}
 	
 	@Bean
-	private Binding binding(Queue queue, TopicExchange exchange) {
+	public Binding binding(Queue queue, TopicExchange exchange) {
 		return BindingBuilder.bind(queue).to(exchange).with(NAME_ROUTE);
 		
 	}
