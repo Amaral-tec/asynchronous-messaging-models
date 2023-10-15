@@ -26,13 +26,12 @@ To get started with this application, follow these steps:
 
 1. **Clone the Repository**:
    ```shell
-   git clone https://github.com/your/repository.git
-
+   https://github.com/Amaral-tec/asynchronous-messaging-models.git
 
 2. **Build the Project:**:
    ```shell
-cd your-project-directory
-mvn clean install
+   cd C:\Documents\workspace-spring-tool-suite-4-4.19.1.RELEASE\asynchronous-messaging-models
+   mvn clean install
 
 3. **Run Microservices:**
 Start the individual microservices by running their respective Java applications.
@@ -41,4 +40,4 @@ Start the individual microservices by running their respective Java applications
 Ensure that RabbitMQ is up and running. Update the RabbitMQ configuration in each microservice if necessary.
 
 ## License
-This project is licensed under the [Your License] License - see the LICENSE.md file for details.
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
