@@ -8,7 +8,9 @@ This is a Java-based microservices application designed to demonstrate the power
 
 - **Microservices Architecture**: The application is built using a microservices architecture, where each microservice performs a specific function.
 
-- **Asynchronous Communication**: RabbitMQ is used as a message broker to enable asynchronous communication between microservices, enhancing flexibility and responsiveness.
+- **Asynchronous Communication**:
+  - **RabbitMQ**: RabbitMQ is used for asynchronous communication between certain microservices, enhancing flexibility and responsiveness.
+  - **Apache Kafka**: Apache Kafka is used to enable real-time streaming and event-driven communication between other parts of the application.
 
 - **Message Queues**: Messages are exchanged between microservices through message queues, ensuring reliable and scalable message delivery.
 
@@ -19,6 +21,7 @@ Before running this application, make sure you have the following prerequisites:
 - Java Development Kit (JDK)
 - Maven (for building the project)
 - RabbitMQ server (you can use a Docker container or install it locally)
+- Apache Kafka and ZooKeeper (you can use a Docker container or install them locally)
 
 ## Getting Started
 
@@ -38,6 +41,9 @@ Start the individual microservices by running their respective Java applications
 
 4. **RabbitMQ Setup:**
 Ensure that RabbitMQ is up and running. Update the RabbitMQ configuration in each microservice if necessary.
+
+5. **Apache Kafka Setup:**
+Ensure that Apache Kafka and ZooKeeper are up and running. Update Kafka configuration in your Kafka-interacting microservices.
 
 ## License
 This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
